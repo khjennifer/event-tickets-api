@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Health check
-app.get("/", (req, res) => res.json({ ok: true, service: "event-tickets-api" }));
+app.get("/", (req, res) => res.json({ ok: true, service: "event-tickets-api updated" }));
 
 // Routes
 app.use("/api/tickets", ticketsRouter);
